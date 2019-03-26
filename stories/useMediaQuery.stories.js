@@ -13,28 +13,33 @@ function MeduaQueriesSample() {
   const desktop = useMediaQuery(queryDesktop);
   const largeDesktop = useMediaQuery(queryLargeDesktop);
   return (
-    <ul>
-      <li>
-        {queryMobile}
-        {' = '}
-        {JSON.stringify(mobile)}
-      </li>
-      <li>
-        {queryTablet}
-        {' = '}
-        {JSON.stringify(tablet)}
-      </li>
-      <li>
-        {queryDesktop}
-        {' = '}
-        {JSON.stringify(desktop)}
-      </li>
-      <li>
-        {queryLargeDesktop}
-        {' = '}
-        {JSON.stringify(largeDesktop)}
-      </li>
-    </ul>
+    <di>
+      <p>
+        Hint: Try resizing the browser window to see changes.
+      </p>
+      <ul>
+        <li>
+          {queryMobile}
+          {' = '}
+          {JSON.stringify(mobile)}
+        </li>
+        <li>
+          {queryTablet}
+          {' = '}
+          {JSON.stringify(tablet)}
+        </li>
+        <li>
+          {queryDesktop}
+          {' = '}
+          {JSON.stringify(desktop)}
+        </li>
+        <li>
+          {queryLargeDesktop}
+          {' = '}
+          {JSON.stringify(largeDesktop)}
+        </li>
+      </ul>
+    </di>
   );
 }
 
